@@ -1,10 +1,10 @@
 # Найдите сумму цифр трехзначного числа.
 
-ticketber = int(input('Введите число: '))
+number = int(input('Введите число: '))
 result = 0
-while ticketber > 0:
-    temp = ticketber % 10
-    ticketber = ticketber // 10
+while number > 0:
+    temp = number % 10
+    number = number // 10
     result = temp + result
 print('Сумма цифр в этом числе -> ' , result)
 
