@@ -59,15 +59,5 @@ print(b, b2)
 
 
 
-#создать массив
 
-# list_1 = []
-# print()
-#
-# print()
-# for i in range(x):
-#     z = list_1.append(int(input('Введите элемент массива: ')))
-# print()
-# print(list_1)
-# print()
 
