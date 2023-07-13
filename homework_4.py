@@ -3,62 +3,62 @@
 
 
 
-list_1 = []
-print()
-x1 = int(input('Задайте длинну первого массива: '))
-print()
-for i in range(x1):
-    z = list_1.append(int(input('Введите элемент массива: ')))
-print()
-print('Первый набор', list_1)
-print()
+# list_1 = []
+# print()
+# x1 = int(input('Задайте длинну первого массива: '))
+# print()
+# for i in range(x1):
+#     z = list_1.append(int(input('Введите элемент массива: ')))
+# print()
+# print('Первый набор', list_1)
+# print()
 
-list_2 = []
-print()
-x2 = int(input('Задайте длинну второго массива: '))
-print()
-for i in range(x2):
-    z = list_2.append(int(input('Введите элемент массива: ')))
-print()
-print('Второй набор', list_2)
-print()
+# list_2 = []
+# print()
+# x2 = int(input('Задайте длинну второго массива: '))
+# print()
+# for i in range(x2):
+#     z = list_2.append(int(input('Введите элемент массива: ')))
+# print()
+# print('Второй набор', list_2)
+# print()
 
-my_dict1 = set(list_1)
-my_dict2 = set(list_2)
+# my_dict1 = set(list_1)
+# my_dict2 = set(list_2)
 
-inter = my_dict1.intersection(my_dict2)
+# inter = my_dict1.intersection(my_dict2)
 
-print(f'Без повторения в порядке возрастания числа, которые встречаются в обоих наборах {sorted(inter)}')
+# print(f'Без повторения в порядке возрастания числа, которые встречаются в обоих наборах {sorted(inter)}')
 
 # В фермерском хозяйстве в Карелии выращивают чернику. Она растёт на круглой грядке, причём кусты высажены только по окружности. Таким образом, у каждого куста есть ровно два соседних. Всего на грядке растёт N кустов.
 # Эти кусты обладают разной урожайностью, поэтому ко времени сбора на них выросло различное число ягод — на i-ом кусте выросло ai ягод.
 # В этом фермерском хозяйстве внедрена система автоматического сбора черники. Эта система состоит из управляющего модуля и нескольких собирающих модулей. Собирающий модуль за один заход, находясь непосредственно перед некоторым кустом, собирает ягоды с этого куста и с двух соседних с ним.
 # Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки.
 
-quantity = []
-print()
-x = int(input('Введите количество кустов: '))
-print()
-for i in range(x):
-    z = quantity.append(int(input(f'Введите количество ягод на кусте {i + 1} : ')))
-print()
-print('На всех кустах висит', *quantity, 'ягод')
-print()
+# quantity = []
+# print()
+# x = int(input('Введите количество кустов: '))
+# print()
+# for i in range(x):
+#     z = quantity.append(int(input(f'Введите количество ягод на кусте {i + 1} : ')))
+# print()
+# print('На всех кустах висит', *quantity, 'ягод')
+# print()
 
-i = 0
-summa = 0
-berry = []
+# i = 0
+# summa = 0
+# berry = []
 
-while (i < x):
-    if (i == x - 1):
-        summa = quantity[i] + quantity[i - 1] + quantity[0]
-    else:
-        summa = quantity[i] + quantity[i - 1] + quantity[i + 1]
-        berry.append(summa)
-        berry.sort()
-    i += 1
+# while (i < x):
+#     if (i == x - 1):
+#         summa = quantity[i] + quantity[i - 1] + quantity[0]
+#     else:
+#         summa = quantity[i] + quantity[i - 1] + quantity[i + 1]
+#         berry.append(summa)
+#         berry.sort()
+#     i += 1
 
-print('За один заход можно максимально собрать', berry[-1], 'ягод')
+# print('За один заход можно максимально собрать', berry[-1], 'ягод')
 
 
 
