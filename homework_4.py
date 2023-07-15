@@ -60,6 +60,19 @@
 
 # print('За один заход можно максимально собрать', berry[-1], 'ягод')
 
+# 2 способ
+
+a = [5, 4, 4, 6, 6 ]
+
+maxi = 0
+maxi_i = 0
+
+for i in range(len(a)):
+    if a[i] + a[i - 1] + a[(i + 1) % len(a)] > maxi:
+        maxi_i = i
+        maxi = a[i] + a[i - 1] + a[(i + 1) % len(a)]
+print(maxi, maxi_i)
+
 
 
 

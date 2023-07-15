@@ -25,26 +25,26 @@
 
 # вариант 2
 
-def aven(input_arr):
-    result_arr = []
-    minmin = min(input_arr)
-    maxmax = max(input_arr)
-    if minmin != maxmax:
-        for i in range(len(input_arr)):
-            if input_arr[i] == maxmax: 
-                result_arr.append(minmin)
-            else: 
-                result_arr.append(input_arr[i])
-    else: 
-        result_arr = input_arr
-    return result_arr
+# def aven(input_arr):
+#     result_arr = []
+#     minmin = min(input_arr)
+#     maxmax = max(input_arr)
+#     if minmin != maxmax:
+#         for i in range(len(input_arr)):
+#             if input_arr[i] == maxmax: 
+#                 result_arr.append(minmin)
+#             else: 
+#                 result_arr.append(input_arr[i])
+#     else: 
+#         result_arr = input_arr
+#     return result_arr
 
-def T33():
-    input_str = input('Введите массив: ')
-    input_arr = [int (x) for x in input_str.split()] 
-    print(aven(input_arr))
+# def T33():
+#     input_str = input('Введите массив: ')
+#     input_arr = [int (x) for x in input_str.split()] 
+#     print(aven(input_arr))
 
-T33()
+# T33()
 
 # Напишите функцию, которая принимает одно число и 
 # проверяет, является ли оно простым
@@ -61,3 +61,4 @@ T33()
 
 # a = int(input())
 # print(is_simple(a))
+
