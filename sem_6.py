@@ -68,19 +68,19 @@
 # 300 220 284
 
 
-# def sum_del(number):
-#     summa = 1
-#     for i in range(2, number // 2 + 1):
-#         if number % i == 0:
-#             summa += i
-#     return summa
+def sum_del(number):
+    summa = 1
+    for i in range(2, number // 2 + 1):
+        if number % i == 0:
+            summa += i
+    return summa
     
-# k = 300
+k = 300
 
-# for i in range(k - 1):
-#     for j in range(i + 1, k):
-#         if sum_del(i) == j and sum_del(j) == i:
-#          print(i, j)
+for i in range(k - 1):
+    for j in range(i + 1, k):
+        if sum_del(i) == j and sum_del(j) == i:
+         print(i, j)
 
 
 # Дан массив, состоящий из целых чисел. Напишите
@@ -91,15 +91,15 @@
 # Далее записаны N чисел — элементы массива. Массив
 # состоит из целых чисел.
 
-a = [1, 5, 1, 5, 1]
+# a = [1, 5, 1, 5, 1]
 
-count = 0
+# count = 0
 
-for i in range(1, len(a) - 1):
-    if a[i - 1] < a[i] > a[i + 1]:
-        count += 1
+# for i in range(1, len(a) - 1):
+#     if a[i - 1] < a[i] > a[i + 1]:
+#         count += 1
 
-print(count)  
+# print(count)  
 
 
 # Дан список чисел. Посчитайте, сколько в нем пар
@@ -110,3 +110,12 @@ print(count)
 # строках.
 # Ввод: Вывод:
 # 1 2 3 2 3 2
+
+
+# a = [1, 5, 3, 1, 1]
+# count = 0
+# for i in range(len(a) - 1):
+#     for j in range (i + 1, len(a)):
+#         if a[i] == a[j]:
+#             count += 1
+# print(count)
